@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}County Directory — Templeton County{% endblock %}
+
+{% block content %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#003366" width="5">&nbsp;</td>
+    <td bgcolor="#003366">
+      <font face="Times New Roman, Times, serif" color="#ffcc00" size="5">
+        &nbsp;<b>Templeton County Directory</b>
+      </font>
+    </td>
+    <td bgcolor="#003366" align="right">
+      <font face="Arial" color="#99aacc" size="1">
+        &nbsp;Home&nbsp;&gt;&nbsp;Directory&nbsp;&nbsp;
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<table width="100%" border="1" cellpadding="10" cellspacing="0" bordercolor="#336699">
+  <tr bgcolor="#336699">
+    <td colspan="2">
+      <font face="Arial" color="#ffffff" size="2"><b>&#9658; COUNTY DIRECTORY</b></font>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <font face="Arial" size="2">
+        <b>&#9658; Elected Officials</b><br>
+        <a href="{{ link('/directory/officials') }}">County Elected Officials</a><br>
+        <font size="1" color="#666666">Contact information for all elected county officers</font><br>
+        <br>
+        <b>&#9658; Department Contacts</b><br>
+        <a href="{{ link('/departments/clerk') }}">County Clerk's Office</a><br>
+        <a href="{{ link('/departments/services') }}">Community Services</a><br>
+        <a href="{{ link('/finance') }}">Finance Department</a>
+      </font>
+    </td>
+    <td width="50%" valign="top">
+      <font face="Arial" size="2">
+        <b>&#9658; Other Resources</b><br>
+        <a href="{{ link('/directory/appeals') }}">Assessment Appeals Board</a><br>
+        <font size="1" color="#666666">Property value dispute resolution</font><br>
+        <br>
+        <a href="{{ link('/records') }}">Public Records</a><br>
+        <font size="1" color="#666666">Submit a public records request</font><br>
+        <br>
+        <a href="{{ link('/contact') }}">General Contact Information</a>
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+<hr size="1" color="#999999" noshade>
+<font face="Arial" size="1" color="#888888">
+  <i>Templeton County &mdash; webmaster@templetoncounty.gov</i>
+</font>
+{% endblock %}

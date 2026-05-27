@@ -1,0 +1,2 @@
+mitmproxy==10.3.1
+cryptography==43.0.3

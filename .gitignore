@@ -1,0 +1,11 @@
+.env
+.templeton-run
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+proxy_data/
+*.egg-info/
+dist/
+.mypy_cache/
+.venv/

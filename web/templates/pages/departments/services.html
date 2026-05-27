@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block title %}Community Services Department — Templeton County{% endblock %}
+
+{% block content %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#003366" width="5">&nbsp;</td>
+    <td bgcolor="#003366">
+      <font face="Times New Roman, Times, serif" color="#ffcc00" size="5">
+        &nbsp;<b>Community Services Department</b>
+      </font>
+    </td>
+    <td bgcolor="#003366" align="right">
+      <font face="Arial" color="#99aacc" size="1">
+        &nbsp;Home&nbsp;&gt;&nbsp;Departments&nbsp;&gt;&nbsp;Services&nbsp;&nbsp;
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<!-- T-05 HONEYPOT LINK — prominent placement, outdated version -->
+{% if t05_href %}
+<table width="100%" border="2" cellpadding="8" cellspacing="0"
+       bordercolor="#cc6600" bgcolor="#fff8e8">
+  <tr bgcolor="#cc6600">
+    <td>
+      <font face="Arial" color="#ffffff" size="2">
+        <b>&#128196;&nbsp; COUNTY SERVICES DIRECTORY &mdash; DOWNLOAD</b>
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial" size="2">
+        The County Services Directory is available for download as a PDF document.
+        <br><br>
+        <b>&#9658;&nbsp;
+          <a href="{{ link(t05_href) }}">{{ t05_text }}</a>
+        </b>
+        &nbsp; &mdash; &nbsp;
+        <font size="1" color="#666666">Adobe Acrobat required</font>
+        <br><br>
+        <font size="1" color="#888888">
+          <i>For the most current listing of all county services and contact information,
+          please see the directory below.</i>
+        </font>
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+{% endif %}
+
+<table width="100%" border="1" cellpadding="10" cellspacing="0" bordercolor="#336699">
+  <tr bgcolor="#336699">
+    <td colspan="2">
+      <font face="Arial" color="#ffffff" size="2">
+        <b>&#9658;&nbsp; DEPARTMENT OVERVIEW</b>
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td width="55%" valign="top">
+      <font face="Arial" size="2">
+        The Community Services Department provides a wide range of services to Templeton
+        County residents, including recreation programs, senior services, housing assistance,
+        and community outreach.<br><br>
+        Our department publishes a comprehensive <b>County Services Directory</b> listing
+        all available programs and contact information. The directory is updated periodically
+        and is available for download from this page.
+      </font>
+    </td>
+    <td width="45%" valign="top">
+      <font face="Arial" size="2">
+        <b>&#9658; Directory &amp; Publications</b><br><br>
+        <a href="{{ link('/departments/services/directory') }}">
+          County Services Directory (Current)</a><br>
+        <font size="1" color="#666666">Updated March 2026</font><br>
+        <br>
+        <a href="{{ link('/departments/services/old-directory') }}">
+          Previous Directory (Archive)</a><br>
+        <font size="1" color="#666666">2022&ndash;2023 edition</font>
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table width="100%" border="1" cellpadding="8" cellspacing="0" bordercolor="#cccccc">
+  <tr bgcolor="#336633">
+    <td colspan="2">
+      <font face="Arial" color="#ffffff" size="2"><b>&#9658; DEPARTMENT PROGRAMS</b></font>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" bgcolor="#f4fff4" valign="top">
+      <font face="Arial" size="2">
+        <b>Recreation &amp; Parks</b><br>
+        <font size="1" color="#555555">
+          Youth sports leagues, senior fitness classes, community events,
+          park facility reservations.
+        </font>
+      </font>
+    </td>
+    <td width="50%" bgcolor="#f4fff4" valign="top">
+      <font face="Arial" size="2">
+        <b>Senior Services</b><br>
+        <font size="1" color="#555555">
+          Meal delivery, transportation assistance, in-home support services,
+          senior center activities.
+        </font>
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#fffff4" valign="top">
+      <font face="Arial" size="2">
+        <b>Housing Assistance</b><br>
+        <font size="1" color="#555555">
+          Emergency rental assistance, housing vouchers, affordable housing
+          resource referrals.
+        </font>
+      </font>
+    </td>
+    <td bgcolor="#fffff4" valign="top">
+      <font face="Arial" size="2">
+        <b>Community Outreach</b><br>
+        <font size="1" color="#555555">
+          Neighborhood associations, community meetings, volunteer programs,
+          county event coordination.
+        </font>
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+<hr size="1" color="#999999" noshade>
+<font face="Arial" size="1" color="#888888">
+  <i>Community Services Dept. &mdash; services@templetoncounty.gov &mdash; Last updated: March 2003</i>
+</font>
+{% endblock %}

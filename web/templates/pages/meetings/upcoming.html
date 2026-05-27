@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block title %}Upcoming Meetings Index — Templeton County{% endblock %}
+
+{% block content %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#003366" width="5">&nbsp;</td>
+    <td bgcolor="#003366">
+      <font face="Times New Roman, Times, serif" color="#ffcc00" size="5">
+        &nbsp;<b>Upcoming Meetings &mdash; Agendas</b>
+      </font>
+    </td>
+    <td bgcolor="#003366" align="right">
+      <font face="Arial" color="#99aacc" size="1">
+        &nbsp;Home&nbsp;&gt;&nbsp;Meetings&nbsp;&gt;&nbsp;Upcoming&nbsp;&nbsp;
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<font face="Arial" size="2">
+  Agendas for meetings scheduled within the next 30 days are listed below.
+  Agendas are posted no later than 72 hours before the meeting.
+  For the full schedule, see the <a href="{{ link('/meetings/calendar') }}">Meeting Calendar</a>.
+</font>
+<br><br>
+
+<table width="100%" border="2" cellpadding="8" cellspacing="0" bordercolor="#336699">
+  <tr bgcolor="#003366">
+    <td colspan="4">
+      <font face="Arial" color="#ffffff" size="2">
+        <b>&#128196;&nbsp; UPCOMING MEETING AGENDAS</b>
+      </font>
+    </td>
+  </tr>
+  <tr bgcolor="#ccddee">
+    <td width="15%"><font face="Arial" size="2"><b>Date</b></font></td>
+    <td width="35%"><font face="Arial" size="2"><b>Body</b></font></td>
+    <td width="30%"><font face="Arial" size="2"><b>Agenda Document</b></font></td>
+    <td width="20%"><font face="Arial" size="2"><b>Location</b></font></td>
+  </tr>
+
+  <tr bgcolor="#fffff0">
+    <td valign="top"><font face="Arial" size="2">Jun 2, 2026</font></td>
+    <td valign="top"><font face="Arial" size="2">Board of Supervisors</font></td>
+    <td valign="top">
+      <font face="Arial" size="2">
+        <a href="http://templetoncounty.gov/meetings/agenda?id=2026-06-02">
+          Agenda &mdash; Jun 2, 2026
+        </a>
+      </font>
+    </td>
+    <td valign="top"><font face="Arial" size="2">Board Chambers</font></td>
+  </tr>
+
+  <tr bgcolor="#f0f8e8">
+    <td valign="top"><font face="Arial" size="2">Jun 9, 2026</font></td>
+    <td valign="top"><font face="Arial" size="2">Budget &amp; Finance Committee</font></td>
+    <td valign="top">
+      <font face="Arial" size="2">
+        <a href="http://templetoncounty.gov/meetings/agenda?id=2026-06-09">
+          Agenda &mdash; Jun 9, 2026
+        </a>
+      </font>
+    </td>
+    <td valign="top"><font face="Arial" size="2">Conf. Room B</font></td>
+  </tr>
+
+  <tr bgcolor="#fffff0">
+    <td valign="top">
+      <font face="Arial" size="2"><b>Jun 10, 2026</b></font>
+    </td>
+    <td valign="top">
+      <font face="Arial" size="2">
+        <b>Planning Commission</b>
+        <font color="#cc0000"><b>&nbsp;&#9733;NEXT&#9733;</b></font>
+      </font>
+    </td>
+    <td valign="top">
+      <font face="Arial" size="2">
+        <b>
+          <a href="http://templetoncounty.gov/meetings/agenda?id=2026-06-10">
+            Agenda &mdash; Jun 10, 2026
+          </a>
+        </b>
+      </font>
+    </td>
+    <td valign="top"><font face="Arial" size="2"><b>Admin Bldg, Room 204</b></font></td>
+  </tr>
+
+  <tr bgcolor="#f0f8e8">
+    <td valign="top"><font face="Arial" size="2">Jun 16, 2026</font></td>
+    <td valign="top"><font face="Arial" size="2">Board of Supervisors</font></td>
+    <td valign="top">
+      <font face="Arial" size="2">
+        <a href="http://templetoncounty.gov/meetings/agenda?id=2026-06-16">
+          Agenda &mdash; Jun 16, 2026
+        </a>
+      </font>
+    </td>
+    <td valign="top"><font face="Arial" size="2">Board Chambers</font></td>
+  </tr>
+
+  <tr bgcolor="#fffff0">
+    <td valign="top"><font face="Arial" size="2">Jun 19, 2026</font></td>
+    <td valign="top"><font face="Arial" size="2">Assessment Appeals Board</font></td>
+    <td valign="top">
+      <font face="Arial" size="2" color="#888888"><i>Agenda not yet posted</i></font>
+    </td>
+    <td valign="top"><font face="Arial" size="2">Conf. Room A</font></td>
+  </tr>
+
+</table>
+
+<br>
+<font face="Arial" size="2">
+  <a href="{{ link('/meetings/calendar') }}">&laquo; Full Meeting Calendar</a>
+</font>
+
+<br><br>
+<hr size="1" color="#999999" noshade>
+<font face="Arial" size="1" color="#888888">
+  <i>Clerk of the Board &mdash; board@templetoncounty.gov &mdash; Agendas posted 72 hours before meeting</i>
+</font>
+{% endblock %}

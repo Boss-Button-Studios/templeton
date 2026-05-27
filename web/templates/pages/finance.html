@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}Finance Department — Templeton County{% endblock %}
+
+{% block content %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#003366" width="5">&nbsp;</td>
+    <td bgcolor="#003366">
+      <font face="Times New Roman, Times, serif" color="#ffcc00" size="5">
+        &nbsp;<b>Finance Department</b>
+      </font>
+    </td>
+    <td bgcolor="#003366" align="right">
+      <font face="Arial" color="#99aacc" size="1">
+        &nbsp;Home&nbsp;&gt;&nbsp;Finance&nbsp;&nbsp;
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<table width="100%" border="1" cellpadding="10" cellspacing="0" bordercolor="#336699">
+  <tr bgcolor="#336699">
+    <td colspan="2">
+      <font face="Arial" color="#ffffff" size="2"><b>&#9658; DEPARTMENT OVERVIEW</b></font>
+    </td>
+  </tr>
+  <tr>
+    <td width="55%" valign="top">
+      <font face="Arial" size="2">
+        The Templeton County Finance Department is responsible for the county's fiscal
+        management, including budget development, financial reporting, accounts payable,
+        payroll, and investment management.<br><br>
+        The FY2026 General Fund budget was adopted by the Board of Supervisors in
+        May 2026. A summary of departmental appropriations is available on the
+        <a href="{{ link('/finance/budget-summary') }}">Budget Summary</a> page.
+      </font>
+    </td>
+    <td width="45%" valign="top">
+      <font face="Arial" size="2">
+        <b>&#9658; Finance Resources</b><br><br>
+        <a href="{{ link('/finance/budget-summary') }}">FY2026 Budget Summary</a>
+        <font color="#cc0000"><b>&nbsp;&#9733;NEW&#9733;</b></font><br>
+        <font size="1" color="#666666">Departmental appropriations, adopted May 2026</font><br>
+        <br>
+        <a href="{{ link('/finance/budget-archive') }}">Prior Year Budget Summaries</a><br>
+        <font size="1" color="#666666">FY2025 and earlier adopted budgets</font><br>
+        <br>
+        <a href="{{ link('/finance/procurement') }}">Procurement Opportunities</a><br>
+        <font size="1" color="#666666">Active bids and RFPs</font>
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table width="100%" border="1" cellpadding="8" cellspacing="0" bordercolor="#cccccc">
+  <tr bgcolor="#003399">
+    <td colspan="2">
+      <font face="Arial" color="#ffffff" size="2"><b>&#9658; CONTACT INFORMATION</b></font>
+    </td>
+  </tr>
+  <tr bgcolor="#f4f4ff">
+    <td width="50%" valign="top">
+      <font face="Arial" size="2">
+        <b>Finance Director:</b><br>
+        Sandra K. Bloom, CPA<br>
+        (555) 800-3300<br>
+        <a href="mailto:finance@templetoncounty.gov">finance@templetoncounty.gov</a>
+      </font>
+    </td>
+    <td width="50%" valign="top">
+      <font face="Arial" size="2">
+        <b>Office Location:</b><br>
+        1234 County Center Drive, Suite 300<br>
+        Templeton, CA 93465<br>
+        Hours: Mon&ndash;Fri 8:00 AM&ndash;5:00 PM
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+<hr size="1" color="#999999" noshade>
+<font face="Arial" size="1" color="#888888">
+  <i>Finance Department &mdash; finance@templetoncounty.gov &mdash; Last updated: May 2003</i>
+</font>
+{% endblock %}

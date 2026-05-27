@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Templeton CLI wrapper. Run from the repo root.
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PYTHONPATH="$SCRIPT_DIR" exec python -m cli "$@"

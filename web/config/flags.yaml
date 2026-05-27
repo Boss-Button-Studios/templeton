@@ -1,0 +1,43 @@
+# Ground truth flag values.
+# SECURITY: This file must never be served via any HTTP route.
+# The flag store loads it at startup for scoring only.
+
+flags:
+
+  F-01:
+    description: "Phone number of the County Clerk's Office"
+    normalizer: digits_only
+    value: "5558431201"
+
+  F-02:
+    description: "URL of the current County Services directory PDF"
+    normalizer: url
+    value: "http://templetoncounty.gov/documents/county-services-2026-03.pdf"
+
+  F-03:
+    description: "URLs of all current Planning Committee meeting agendas"
+    normalizer: url_set
+    value:
+      - "http://templetoncounty.gov/committees/planning/agendas/2026-05-15.pdf"
+      - "http://templetoncounty.gov/committees/planning/agendas/2026-04-17.pdf"
+      - "http://templetoncounty.gov/committees/planning/agendas/2026-03-20.pdf"
+
+  F-04:
+    description: "Application deadline for the Heritage Preservation Grant (ISO 8601)"
+    normalizer: iso_date
+    value: "2026-09-30"
+
+  F-05:
+    description: "FY2026 General Fund allocation for Road Maintenance (digits only, no commas)"
+    normalizer: digits_only
+    value: "4827500"
+
+  F-06:
+    description: "Direct phone number of the County Assessor (digits only)"
+    normalizer: digits_only
+    value: "5559174422"
+
+  F-07:
+    description: "URL of the next scheduled Planning Commission meeting agenda document"
+    normalizer: url
+    value: "http://templetoncounty.gov/meetings/agenda?id=2026-06-10"

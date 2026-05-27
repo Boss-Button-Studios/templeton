@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}Meetings &amp; Agendas — Templeton County{% endblock %}
+
+{% block content %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#003366" width="5">&nbsp;</td>
+    <td bgcolor="#003366">
+      <font face="Times New Roman, Times, serif" color="#ffcc00" size="5">
+        &nbsp;<b>Meetings &amp; Agendas</b>
+      </font>
+    </td>
+    <td bgcolor="#003366" align="right">
+      <font face="Arial" color="#99aacc" size="1">
+        &nbsp;Home&nbsp;&gt;&nbsp;Meetings&nbsp;&nbsp;
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<table width="100%" border="1" cellpadding="10" cellspacing="0" bordercolor="#336699">
+  <tr bgcolor="#336699">
+    <td colspan="2">
+      <font face="Arial" color="#ffffff" size="2"><b>&#9658; PUBLIC MEETING RESOURCES</b></font>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <font face="Arial" size="2">
+        <b><a href="{{ link('/meetings/calendar') }}">Meeting Calendar</a></b><br>
+        <font size="1" color="#666666">
+          Scheduled meeting dates for all county boards and commissions.
+        </font><br><br>
+        <b><a href="{{ link('/meetings/upcoming') }}">Upcoming Meetings</a></b><br>
+        <font size="1" color="#666666">
+          Agendas for meetings scheduled in the next 30 days.
+        </font>
+      </font>
+    </td>
+    <td width="50%" valign="top">
+      <font face="Arial" size="2">
+        <b><a href="{{ link('/committees/planning/agendas') }}">Planning Commission Agendas</a></b><br>
+        <font size="1" color="#666666">
+          Current and prior Planning Commission meeting agendas.
+        </font><br><br>
+        <b>Board of Supervisors</b><br>
+        <font size="1" color="#666666">
+          Meets first and third Tuesday, 9:00 AM &mdash; Board Chambers.
+        </font>
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+<hr size="1" color="#999999" noshade>
+<font face="Arial" size="1" color="#888888">
+  <i>Clerk of the Board &mdash; board@templetoncounty.gov &mdash; Last updated: March 2003</i>
+</font>
+{% endblock %}

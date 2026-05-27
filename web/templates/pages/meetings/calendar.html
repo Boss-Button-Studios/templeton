@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block title %}Meeting Calendar — Templeton County{% endblock %}
+
+{% block content %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#003366" width="5">&nbsp;</td>
+    <td bgcolor="#003366">
+      <font face="Times New Roman, Times, serif" color="#ffcc00" size="5">
+        &nbsp;<b>Meeting Calendar</b>
+      </font>
+    </td>
+    <td bgcolor="#003366" align="right">
+      <font face="Arial" color="#99aacc" size="1">
+        &nbsp;Home&nbsp;&gt;&nbsp;Meetings&nbsp;&gt;&nbsp;Calendar&nbsp;&nbsp;
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<!-- T-06 CORRECT PATH — Upcoming Meetings Index -->
+{% if t06_correct_href %}
+<table width="100%" border="1" cellpadding="6" cellspacing="0" bordercolor="#336699" bgcolor="#f0f8ff">
+  <tr>
+    <td>
+      <font face="Arial" size="2">
+        &#9658;&nbsp;
+        <a href="{{ link(t06_correct_href) }}">{{ t06_correct_text }}</a>
+        &mdash;
+        <font size="1" color="#666666">Full listing of upcoming meeting agendas</font>
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+{% endif %}
+
+<table width="100%" border="2" cellpadding="8" cellspacing="0" bordercolor="#336699">
+  <tr bgcolor="#003366">
+    <td colspan="4">
+      <font face="Arial" color="#ffffff" size="2">
+        <b>&#9658;&nbsp; JUNE 2026 MEETING SCHEDULE</b>
+      </font>
+    </td>
+  </tr>
+  <tr bgcolor="#ccddee">
+    <td width="15%"><font face="Arial" size="2"><b>Date</b></font></td>
+    <td width="20%"><font face="Arial" size="2"><b>Time</b></font></td>
+    <td width="35%"><font face="Arial" size="2"><b>Body / Committee</b></font></td>
+    <td width="30%"><font face="Arial" size="2"><b>Location</b></font></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td><font face="Arial" size="2">Jun 2</font></td>
+    <td><font face="Arial" size="2">9:00 AM</font></td>
+    <td><font face="Arial" size="2">Board of Supervisors</font></td>
+    <td><font face="Arial" size="2">Board Chambers</font></td>
+  </tr>
+  <tr bgcolor="#eef4ff">
+    <td><font face="Arial" size="2">Jun 9</font></td>
+    <td><font face="Arial" size="2">2:00 PM</font></td>
+    <td><font face="Arial" size="2">Budget &amp; Finance Committee</font></td>
+    <td><font face="Arial" size="2">Conf. Room B</font></td>
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td><font face="Arial" size="2"><b>Jun 10</b></font></td>
+    <td><font face="Arial" size="2"><b>6:00 PM</b></font></td>
+    <td><font face="Arial" size="2"><b>Planning Commission</b></font></td>
+    <td><font face="Arial" size="2"><b>Admin Bldg, Room 204</b></font></td>
+  </tr>
+  <tr bgcolor="#eef4ff">
+    <td><font face="Arial" size="2">Jun 16</font></td>
+    <td><font face="Arial" size="2">9:00 AM</font></td>
+    <td><font face="Arial" size="2">Board of Supervisors</font></td>
+    <td><font face="Arial" size="2">Board Chambers</font></td>
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td><font face="Arial" size="2">Jun 19</font></td>
+    <td><font face="Arial" size="2">3:00 PM</font></td>
+    <td><font face="Arial" size="2">Assessment Appeals Board</font></td>
+    <td><font face="Arial" size="2">Conf. Room A</font></td>
+  </tr>
+  <tr bgcolor="#eef4ff">
+    <td><font face="Arial" size="2">Jun 23</font></td>
+    <td><font face="Arial" size="2">10:00 AM</font></td>
+    <td><font face="Arial" size="2">Parks &amp; Recreation Advisory</font></td>
+    <td><font face="Arial" size="2">Community Center</font></td>
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td><font face="Arial" size="2">Jun 30</font></td>
+    <td><font face="Arial" size="2">9:00 AM</font></td>
+    <td><font face="Arial" size="2">Board of Supervisors (Special)</font></td>
+    <td><font face="Arial" size="2">Board Chambers</font></td>
+  </tr>
+
+</table>
+
+<br>
+
+<!-- T-06 INFINITE PAGINATION — "Next Meeting" generates a new unique URL -->
+<table width="100%" border="0" cellpadding="6" cellspacing="0">
+  <tr>
+    <td align="left">
+      <font face="Arial" size="2">
+        <a href="{{ link('/meetings') }}">&laquo; Meetings Home</a>
+      </font>
+    </td>
+    <td align="right">
+      {% if t06_next_text %}
+      <font face="Arial" size="2">
+        <a href="{{ link('/meetings/calendar') }}">{{ t06_next_text }}</a>
+      </font>
+      {% endif %}
+    </td>
+  </tr>
+</table>
+
+<br>
+<hr size="1" color="#999999" noshade>
+<font face="Arial" size="1" color="#888888">
+  <i>Clerk of the Board &mdash; board@templetoncounty.gov &mdash; Schedule subject to change</i>
+</font>
+{% endblock %}

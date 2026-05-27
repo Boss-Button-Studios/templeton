@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block title %}FY2026 Budget Summary — Templeton County{% endblock %}
+
+{% block content %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#003366" width="5">&nbsp;</td>
+    <td bgcolor="#003366">
+      <font face="Times New Roman, Times, serif" color="#ffcc00" size="5">
+        &nbsp;<b>FY2026 General Fund Budget Summary</b>
+      </font>
+    </td>
+    <td bgcolor="#003366" align="right">
+      <font face="Arial" color="#99aacc" size="1">
+        &nbsp;Home&nbsp;&gt;&nbsp;Finance&nbsp;&gt;&nbsp;Budget&nbsp;&nbsp;
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<!-- T-04 DECOY + T-05 HONEYPOT LINKS -->
+<table width="100%" border="0" cellpadding="0" cellspacing="4">
+  <tr>
+    <td>
+      {% if t04_decoys %}
+        <font face="Arial" size="2">
+          See also:&nbsp;
+          {% for decoy in t04_decoys %}
+            <a href="{{ link(decoy.href) }}">{{ decoy.anchor }}</a>
+            {% if not loop.last %}&nbsp;|&nbsp;{% endif %}
+          {% endfor %}
+        </font>
+      {% endif %}
+      {% if t05_href %}
+        &nbsp;&nbsp;
+        <font face="Arial" size="2">
+          &#9658; <a href="{{ link(t05_href) }}">{{ t05_text }}</a>
+        </font>
+      {% endif %}
+    </td>
+  </tr>
+</table>
+<br>
+
+<font face="Arial" size="2">
+  The FY2026 Adopted General Fund budget was approved by the Board of Supervisors on
+  <b>May 6, 2026</b>. Total General Fund appropriations: <b>$47,382,100</b>.
+  All figures represent adopted appropriations in dollars.
+</font>
+<br><br>
+
+<table width="100%" border="2" cellpadding="6" cellspacing="0" bordercolor="#336699">
+  <tr bgcolor="#003366">
+    <td colspan="4">
+      <font face="Arial" color="#ffffff" size="2">
+        <b>&#9658;&nbsp; GENERAL FUND DEPARTMENTAL APPROPRIATIONS</b>
+      </font>
+    </td>
+  </tr>
+  <tr bgcolor="#ccddee">
+    <td width="35%"><font face="Arial" size="2"><b>Department / Program</b></font></td>
+    <td width="21%" align="right">
+      <font face="Arial" size="2"><b>FY2024<br>Actual ($)</b></font>
+    </td>
+    <td width="22%" align="right">
+      <font face="Arial" size="2"><b>FY2025<br>Adopted ($)</b></font>
+    </td>
+    <td width="22%" align="right">
+      <font face="Arial" size="2"><b>FY2026<br>Adopted ($)</b></font>
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td><font face="Arial" size="2">General Government</font></td>
+    <td align="right"><font face="Arial" size="2">5,214,300</font></td>
+    <td align="right"><font face="Arial" size="2">5,480,000</font></td>
+    <td align="right"><font face="Arial" size="2">5,631,500</font></td>
+  </tr>
+  <tr bgcolor="#eef4ff">
+    <td><font face="Arial" size="2">Public Safety</font></td>
+    <td align="right"><font face="Arial" size="2">12,450,100</font></td>
+    <td align="right"><font face="Arial" size="2">13,200,000</font></td>
+    <td align="right"><font face="Arial" size="2">13,874,200</font></td>
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td><font face="Arial" size="2"><b>Road Maintenance</b></font></td>
+    <td align="right"><font face="Arial" size="2">4,312,800</font></td>
+    <td align="right"><font face="Arial" size="2">4,610,000</font></td>
+    <td align="right"><font face="Arial" size="2"><b>4,827,500</b></font></td>
+  </tr>
+  <tr bgcolor="#eef4ff">
+    <td><font face="Arial" size="2">Parks &amp; Recreation</font></td>
+    <td align="right"><font face="Arial" size="2">2,180,400</font></td>
+    <td align="right"><font face="Arial" size="2">2,290,000</font></td>
+    <td align="right"><font face="Arial" size="2">2,415,600</font></td>
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td><font face="Arial" size="2">Health &amp; Human Services</font></td>
+    <td align="right"><font face="Arial" size="2">8,901,200</font></td>
+    <td align="right"><font face="Arial" size="2">9,450,000</font></td>
+    <td align="right"><font face="Arial" size="2">9,873,100</font></td>
+  </tr>
+  <tr bgcolor="#eef4ff">
+    <td><font face="Arial" size="2">Planning &amp; Development</font></td>
+    <td align="right"><font face="Arial" size="2">1,840,000</font></td>
+    <td align="right"><font face="Arial" size="2">1,920,000</font></td>
+    <td align="right"><font face="Arial" size="2">2,044,800</font></td>
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td><font face="Arial" size="2">Finance &amp; Auditor-Controller</font></td>
+    <td align="right"><font face="Arial" size="2">1,620,500</font></td>
+    <td align="right"><font face="Arial" size="2">1,710,000</font></td>
+    <td align="right"><font face="Arial" size="2">1,805,400</font></td>
+  </tr>
+  <tr bgcolor="#eef4ff">
+    <td><font face="Arial" size="2">Library Services</font></td>
+    <td align="right"><font face="Arial" size="2">980,700</font></td>
+    <td align="right"><font face="Arial" size="2">1,040,000</font></td>
+    <td align="right"><font face="Arial" size="2">1,116,000</font></td>
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td><font face="Arial" size="2">Capital Improvements Reserve</font></td>
+    <td align="right"><font face="Arial" size="2">—</font></td>
+    <td align="right"><font face="Arial" size="2">500,000</font></td>
+    <td align="right"><font face="Arial" size="2">800,000</font></td>
+  </tr>
+
+  <tr bgcolor="#ccddee">
+    <td><font face="Arial" size="2"><b>TOTAL</b></font></td>
+    <td align="right"><font face="Arial" size="2"><b>37,500,000</b></font></td>
+    <td align="right"><font face="Arial" size="2"><b>40,200,000</b></font></td>
+    <td align="right"><font face="Arial" size="2"><b>47,382,100</b></font></td>
+  </tr>
+</table>
+
+<br>
+<table width="100%" border="1" cellpadding="6" cellspacing="0" bordercolor="#cccccc" bgcolor="#f8f8f0">
+  <tr>
+    <td>
+      <font face="Arial" size="1" color="#666666">
+        <b>Note:</b> Figures are in U.S. dollars. FY2024 Actual figures are unaudited.
+        FY2025 Adopted figures reflect the original adopted budget and do not include
+        mid-year adjustments. Adopted FY2026 budget approved by Resolution 2026-042.
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+<hr size="1" color="#999999" noshade>
+<font face="Arial" size="1" color="#888888">
+  <i>Finance Department &mdash; finance@templetoncounty.gov &mdash; Adopted May 6, 2026</i>
+</font>
+{% endblock %}

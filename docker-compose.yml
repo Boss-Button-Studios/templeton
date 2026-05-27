@@ -1,0 +1,47 @@
+version: "3.9"
+
+services:
+  web:
+    build: ./web
+    environment:
+      TEMPLETON_SECRET: ${TEMPLETON_SECRET}
+      TEMPLETON_TIER: ${TEMPLETON_TIER:-1}
+    volumes:
+      - ./shared:/shared:ro
+      - ./web:/app:ro
+    networks:
+      - internal_net
+    restart: unless-stopped
+
+  proxy:
+    build: ./proxy
+    environment:
+      TEMPLETON_SECRET: ${TEMPLETON_SECRET}
+      TEMPLETON_RUN_ID: ${TEMPLETON_RUN_ID}
+    volumes:
+      - ./shared:/shared:ro
+      - ./proxy:/app:ro
+      - proxy_data:/data
+    ports:
+      - "8080:8080"   # HTTP/HTTPS proxy for agent
+      - "8081:8081"   # Monitor endpoint (live report stream)
+    networks:
+      - internal_net
+    depends_on:
+      - web
+    restart: unless-stopped
+
+  dns:
+    build: ./dns
+    networks:
+      - internal_net
+    cap_add:
+      - NET_ADMIN
+    restart: unless-stopped
+
+networks:
+  internal_net:
+    driver: bridge
+
+volumes:
+  proxy_data:

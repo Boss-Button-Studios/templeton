@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block title %}Planning Commission — Templeton County{% endblock %}
+
+{% block content %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#003366" width="5">&nbsp;</td>
+    <td bgcolor="#003366">
+      <font face="Times New Roman, Times, serif" color="#ffcc00" size="5">
+        &nbsp;<b>Planning Commission</b>
+      </font>
+    </td>
+    <td bgcolor="#003366" align="right">
+      <font face="Arial" color="#99aacc" size="1">
+        &nbsp;Home&nbsp;&gt;&nbsp;Planning&nbsp;&nbsp;
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<table width="100%" border="1" cellpadding="10" cellspacing="0" bordercolor="#336699">
+  <tr bgcolor="#336699">
+    <td colspan="2">
+      <font face="Arial" color="#ffffff" size="2"><b>&#9658; ABOUT THE PLANNING COMMISSION</b></font>
+    </td>
+  </tr>
+  <tr>
+    <td width="55%" valign="top">
+      <font face="Arial" size="2">
+        The Templeton County Planning Commission is a five-member advisory body appointed
+        by the Board of Supervisors. The Commission reviews land use applications, general
+        plan amendments, subdivision maps, and zoning changes.<br><br>
+        Regular meetings are held on the <b>third Thursday of each month</b> at 6:00 PM in
+        the County Administration Building, Room 204.
+      </font>
+    </td>
+    <td width="45%" valign="top">
+      <font face="Arial" size="2">
+        <b>&#9658; Commission Resources</b><br><br>
+        <a href="{{ link('/committees/planning/agendas') }}">Meeting Agendas &amp; Minutes</a><br>
+        <font size="1" color="#666666">Current and recent meeting documents</font><br>
+        <br>
+        <a href="{{ link('/meetings/calendar') }}">Meeting Calendar</a><br>
+        <font size="1" color="#666666">Scheduled meeting dates and locations</font><br>
+        <br>
+        <a href="{{ link('/committees/planning/archive') }}">Records Archive</a><br>
+        <font size="1" color="#666666">Historical planning documents (pre-2020)</font>
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table width="100%" border="1" cellpadding="8" cellspacing="0" bordercolor="#cccccc">
+  <tr bgcolor="#663399">
+    <td colspan="3">
+      <font face="Arial" color="#ffffff" size="2"><b>&#9658; COMMISSION MEMBERS</b></font>
+    </td>
+  </tr>
+  <tr bgcolor="#f4f0ff">
+    <td width="33%" valign="top">
+      <font face="Arial" size="2">
+        <b>Chair:</b><br>
+        Robert T. Paxton<br>
+        <font size="1" color="#666666">Term expires 2005</font>
+      </font>
+    </td>
+    <td width="33%" valign="top">
+      <font face="Arial" size="2">
+        <b>Vice Chair:</b><br>
+        Diane M. Okonkwo<br>
+        <font size="1" color="#666666">Term expires 2004</font>
+      </font>
+    </td>
+    <td width="34%" valign="top">
+      <font face="Arial" size="2">
+        <b>Secretary:</b><br>
+        Planning Department Staff<br>
+        <font size="1" color="#666666">(555) 800-2200</font>
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+<hr size="1" color="#999999" noshade>
+<font face="Arial" size="1" color="#888888">
+  <i>Planning Commission &mdash; planning@templetoncounty.gov &mdash; Last updated: March 2003</i>
+</font>
+{% endblock %}

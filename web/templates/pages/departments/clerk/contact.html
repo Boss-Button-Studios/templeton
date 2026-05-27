@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+
+{% block title %}Clerk's Office Contact Information — Templeton County{% endblock %}
+
+{% block content %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#003366" width="5">&nbsp;</td>
+    <td bgcolor="#003366">
+      <font face="Times New Roman, Times, serif" color="#ffcc00" size="5">
+        &nbsp;<b>Clerk's Office &mdash; Contact</b>
+      </font>
+    </td>
+    <td bgcolor="#003366" align="right">
+      <font face="Arial" color="#99aacc" size="1">
+        &nbsp;Home&nbsp;&gt;&nbsp;Clerk&nbsp;&gt;&nbsp;Contact&nbsp;&nbsp;
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<table width="80%" border="2" cellpadding="12" cellspacing="0" bordercolor="#336699">
+  <tr bgcolor="#003366">
+    <td colspan="2">
+      <font face="Arial" color="#ffffff" size="2">
+        <b>&#128222;&nbsp; COUNTY CLERK'S OFFICE &mdash; CONTACT INFORMATION</b>
+      </font>
+    </td>
+  </tr>
+
+  <tr bgcolor="#e8f0ff">
+    <td width="35%" valign="top">
+      <font face="Arial" size="2" color="#333333">
+        <b>Mailing Address:</b>
+      </font>
+    </td>
+    <td valign="top">
+      <font face="Arial" size="2">
+        County Clerk's Office<br>
+        1234 County Center Drive, Suite 101<br>
+        Templeton, CA 93465
+      </font>
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td valign="top">
+      <font face="Arial" size="2" color="#333333">
+        <b>Main Office Phone:</b>
+      </font>
+    </td>
+    <td valign="top">
+      <font face="Arial" size="2">
+        <font face="Courier New, monospace" size="3"><b>(555) 843&#8209;1201</b></font><br>
+        <font size="1" color="#666666">Press 0 for the operator</font>
+      </font>
+    </td>
+  </tr>
+
+  <tr bgcolor="#e8f0ff">
+    <td valign="top">
+      <font face="Arial" size="2" color="#333333"><b>Fax:</b></font>
+    </td>
+    <td valign="top">
+      <font face="Arial" size="2">
+        <font face="Courier New, monospace">(555) 843&#8209;1210</font>
+      </font>
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td valign="top">
+      <font face="Arial" size="2" color="#333333"><b>Email:</b></font>
+    </td>
+    <td valign="top">
+      <font face="Arial" size="2">
+        <a href="mailto:clerk@templetoncounty.gov">clerk@templetoncounty.gov</a><br>
+        <font size="1" color="#666666">For general inquiries only &mdash; not for records requests</font>
+      </font>
+    </td>
+  </tr>
+
+  <tr bgcolor="#e8f0ff">
+    <td valign="top">
+      <font face="Arial" size="2" color="#333333"><b>Hours:</b></font>
+    </td>
+    <td valign="top">
+      <font face="Arial" size="2">
+        Monday &ndash; Friday: 8:00 AM &ndash; 5:00 PM<br>
+        <font size="1" color="#666666">Closed on county holidays</font>
+      </font>
+    </td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td valign="top">
+      <font face="Arial" size="2" color="#333333"><b>County Clerk:</b></font>
+    </td>
+    <td valign="top">
+      <font face="Arial" size="2">
+        Margaret L. Henshaw, County Clerk<br>
+        <font size="1" color="#666666">
+          Appointed 2001 &bull; Re-appointed 2003
+        </font>
+      </font>
+    </td>
+  </tr>
+
+</table>
+
+<br>
+
+<table width="80%" border="1" cellpadding="8" cellspacing="0" bordercolor="#cccccc" bgcolor="#fffff8">
+  <tr bgcolor="#cccc99">
+    <td>
+      <font face="Arial" size="2"><b>&#9658; RELATED SERVICES</b></font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial" size="2">
+        <a href="{{ link('/records') }}">&#9658; Submit a Public Records Request</a><br>
+        <a href="{{ link('/departments/clerk/licenses') }}">&#9658; Business License Applications</a><br>
+        <a href="{{ link('/departments/clerk/marriage') }}">&#9658; Marriage Certificates &amp; Vital Records</a><br>
+        <a href="{{ link('/departments/clerk/voter') }}">&#9658; Voter Registration Information</a>
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+<hr size="1" color="#999999" noshade>
+<font face="Arial" size="1" color="#888888">
+  <i>County Clerk's Office &mdash; clerk@templetoncounty.gov &mdash; Last updated: February 2003</i>
+</font>
+{% endblock %}

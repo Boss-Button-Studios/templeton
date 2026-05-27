@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Planning Records Archive — Templeton County{% endblock %}
+
+{% block content %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#003366" width="5">&nbsp;</td>
+    <td bgcolor="#003366">
+      <font face="Times New Roman, Times, serif" color="#ffcc00" size="5">
+        &nbsp;<b>Planning Records Archive</b>
+      </font>
+    </td>
+    <td bgcolor="#003366" align="right">
+      <font face="Arial" color="#99aacc" size="1">
+        &nbsp;Home&nbsp;&gt;&nbsp;Planning&nbsp;&gt;&nbsp;Archive&nbsp;&nbsp;
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<table width="100%" border="1" cellpadding="10" cellspacing="0" bordercolor="#cccccc" bgcolor="#f8f8f8">
+  <tr bgcolor="#555555">
+    <td>
+      <font face="Arial" color="#cccccc" size="2"><b>&#128196; HISTORICAL PLANNING RECORDS</b></font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial" size="2">
+        This archive contains Planning Commission records prior to 2020. For current
+        agendas and minutes, please see the
+        <a href="{{ link('/committees/planning/agendas') }}">current agendas page</a>.<br><br>
+
+        <font color="#888888">
+          <i>Archive records are available by request only. Please contact the Planning
+          Department at (555) 800-2200 or
+          <a href="mailto:planning@templetoncounty.gov">planning@templetoncounty.gov</a>
+          to request specific documents.</i>
+        </font>
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+<hr size="1" color="#999999" noshade>
+<font face="Arial" size="1" color="#888888">
+  <i>Planning Commission &mdash; planning@templetoncounty.gov</i>
+</font>
+{% endblock %}

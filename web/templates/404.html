@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Page Not Found — Templeton County{% endblock %}
+
+{% block content %}
+<font face="Arial, Helvetica, sans-serif" size="4" color="#990000">
+  <b>Page Not Found</b>
+</font>
+<hr size="2" color="#999999" noshade>
+
+<table border="1" cellpadding="10" cellspacing="0" bordercolor="#cccccc" width="60%">
+  <tr bgcolor="#fff0f0">
+    <td>
+      <font face="Arial, Helvetica" size="2">
+        <b>Error 404 &mdash; The requested page could not be found.</b>
+        <br><br>
+        The page you are looking for may have been moved, renamed, or removed.
+        <br><br>
+        <a href="{{ link('/') }}">&#8592; Return to the Templeton County Home Page</a>
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+<font face="Arial, Helvetica" size="1" color="#888888">
+  Templeton County Web Team &mdash; webmaster@templetoncounty.gov
+</font>
+{% endblock %}

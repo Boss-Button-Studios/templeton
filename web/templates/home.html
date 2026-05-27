@@ -1,0 +1,481 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome to Templeton County Government — Official Website{% endblock %}
+
+{% block content %}
+
+<!-- PAGE TITLE -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#003366" width="5">&nbsp;</td>
+    <td bgcolor="#003366">
+      <font face="Times New Roman, Times, serif" color="#ffcc00" size="5">
+        &nbsp;<b>Welcome to Templeton County</b>
+      </font>
+    </td>
+    <td bgcolor="#003366" align="right">
+      <font face="Arial" color="#99aacc" size="1">
+        &nbsp;Home&nbsp;&gt;&nbsp;Welcome&nbsp;&nbsp;
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<!-- IMPORTANT NOTICE BOX -->
+<table width="100%" border="2" cellpadding="8" cellspacing="0"
+       bordercolor="#cc0000" bgcolor="#fff8f0">
+  <tr>
+    <td bgcolor="#cc0000" width="90" align="center" valign="middle">
+      <font face="Arial" color="#ffffff" size="4"><b>&#9888;</b></font>
+      <br>
+      <font face="Arial" color="#ffff99" size="1"><b>IMPORTANT<br>NOTICE</b></font>
+    </td>
+    <td bgcolor="#fff8f0">
+      <font face="Arial, Helvetica" size="2" color="#660000">
+        <b>County offices will be CLOSED Monday, May 27 in observance of
+        Memorial Day.</b> Emergency services remain available at
+        <b>(555) 800&#8209;0000</b>. Online services are available 24/7.
+        <font color="#cc0000">
+          <b><blink>&nbsp;&#9733; NEW &#9733;&nbsp;</blink></b>
+        </font>
+        <a href="{{ link('/programs/grants/deadlines') }}">Grant application
+        deadline extended &mdash; click here</a>.
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<table width="100%" border="0" cellpadding="6" cellspacing="8">
+  <tr valign="top">
+
+    <!-- ── Main column ─────────────────────────────────────────────── -->
+    <td width="57%">
+
+      <!-- Welcome blurb -->
+      <table width="100%" border="1" cellpadding="8" cellspacing="0"
+             bordercolor="#ccccaa" bgcolor="#fffff8">
+        <tr bgcolor="#f0f0e0">
+          <td>
+            <font face="Comic Sans MS, Arial" size="2" color="#333333">
+              Welcome to the <b>official</b> website of
+              <font color="#003366"><b>Templeton County, California</b></font>.
+              Our county serves over <b>45,000 residents</b> across
+              312&nbsp;square miles with a full range of municipal services,
+              programs, elected offices, and community resources.
+              <br><br>
+              Use the navigation links above or the
+              <b>Quick Links</b> panel to find the department
+              or service you need. If you cannot find what you are looking for,
+              please <a href="{{ link('/contact') }}">contact us</a>.
+            </font>
+          </td>
+        </tr>
+      </table>
+      <br>
+
+      <hr size="2" color="#336699" noshade>
+
+      <!-- Departments grid -->
+      <table width="100%" border="2" cellpadding="8" cellspacing="0"
+             bordercolor="#336699">
+        <tr bgcolor="#003366">
+          <td colspan="2">
+            <font face="Arial, Helvetica" color="#ffffff" size="2">
+              <b>&#9660;&nbsp; COUNTY DEPARTMENTS &amp; OFFICES
+              &nbsp;&#9660;</b>
+            </font>
+          </td>
+        </tr>
+
+        <tr>
+          <td bgcolor="#e8f0ff" width="50%" valign="top">
+            <font face="Arial" size="2">
+              <b><a href="{{ link('/departments/clerk') }}">
+                County Clerk's Office</a></b>
+              <font color="#cc0000"><b>&nbsp;&#9733;NEW&#9733;</b></font>
+              <br>
+              <font color="#555555" size="1">
+                Voter registration, recorded documents, business licenses,
+                marriage certificates, and public records requests.
+                <br>
+                <a href="{{ link('/departments/clerk/contact') }}">
+                  &#9658; Contact the Clerk</a>
+              </font>
+            </font>
+          </td>
+          <td bgcolor="#fff8e8" width="50%" valign="top">
+            <font face="Arial" size="2">
+              <b><a href="{{ link('/departments/services') }}">
+                Community Services</a></b><br>
+              <font color="#555555" size="1">
+                Recreation programs, senior services, housing assistance,
+                and the county services directory.
+                <br>
+                <a href="{{ link('/departments/services/directory') }}">
+                  &#9658; Services Directory</a>
+              </font>
+            </font>
+          </td>
+        </tr>
+
+        <tr>
+          <td bgcolor="#fff0e8" valign="top">
+            <font face="Arial" size="2">
+              <b><a href="{{ link('/departments/public-works') }}">
+                Public Works</a></b><br>
+              <font color="#555555" size="1">
+                Road maintenance, building permits, stormwater management,
+                and infrastructure projects.
+              </font>
+            </font>
+          </td>
+          <td bgcolor="#f0f8e8" valign="top">
+            <font face="Arial" size="2">
+              <b><a href="{{ link('/departments/animal-services') }}">
+                Animal Services</a></b><br>
+              <font color="#555555" size="1">
+                Pet licensing, adoption, lost &amp; found, and animal
+                control services.
+              </font>
+            </font>
+          </td>
+        </tr>
+
+        <tr>
+          <td bgcolor="#e8fff0" valign="top">
+            <font face="Arial" size="2">
+              <b><a href="{{ link('/programs/grants') }}">
+                Grants &amp; Programs</a></b>
+              <font color="#cc0000"><b>&nbsp;&#9733;NEW&#9733;</b></font>
+              <br>
+              <font color="#555555" size="1">
+                County-administered grant programs, application deadlines,
+                and eligibility requirements.
+                <br>
+                <a href="{{ link('/programs/grants/deadlines') }}">
+                  &#9658; View Deadlines</a>
+              </font>
+            </font>
+          </td>
+          <td bgcolor="#f8f0ff" valign="top">
+            <font face="Arial" size="2">
+              <b><a href="{{ link('/finance') }}">
+                Finance Department</a></b>
+              <font color="#cc0000"><b>&nbsp;&#9733;NEW&#9733;</b></font>
+              <br>
+              <font color="#555555" size="1">
+                Annual budget, financial reports, tax information, and
+                procurement opportunities.
+                <br>
+                <a href="{{ link('/finance/budget-summary') }}">
+                  &#9658; FY2026 Budget Summary</a>
+              </font>
+            </font>
+          </td>
+        </tr>
+
+        <tr>
+          <td bgcolor="#ffffe8" valign="top">
+            <font face="Arial" size="2">
+              <b><a href="{{ link('/directory') }}">
+                County Directory</a></b><br>
+              <font color="#555555" size="1">
+                Elected officials, department contacts, and staff directory.
+                <br>
+                <a href="{{ link('/directory/officials') }}">
+                  &#9658; Elected Officials</a>
+              </font>
+            </font>
+          </td>
+          <td bgcolor="#fff0f8" valign="top">
+            <font face="Arial" size="2">
+              <b><a href="{{ link('/meetings') }}">
+                Meetings &amp; Agendas</a></b><br>
+              <font color="#555555" size="1">
+                Board of Supervisors, Planning Commission, and committee
+                meeting schedules and agendas.
+                <br>
+                <a href="{{ link('/meetings/calendar') }}">
+                  &#9658; Meeting Calendar</a>
+              </font>
+            </font>
+          </td>
+        </tr>
+
+        <tr bgcolor="#ddddcc">
+          <td colspan="2" align="center">
+            <font face="Arial" size="1" color="#666655">
+              <a href="{{ link('/sitemap') }}">Full Site Map</a>
+              &nbsp;|&nbsp;
+              <a href="{{ link('/contact') }}">Can't Find It? Contact Us</a>
+              &nbsp;|&nbsp;
+              <a href="{{ link('/records') }}">Public Records Request</a>
+            </font>
+          </td>
+        </tr>
+      </table>
+
+      <br>
+      <hr size="1" color="#999999" noshade>
+      <font face="Arial" size="1" color="#888888">
+        <i>Having trouble viewing this page?
+        <a href="{{ link('/help') }}">Click here for browser help</a>.
+        This site requires JavaScript to be enabled.</i>
+      </font>
+
+    </td>
+
+    <!-- ── Announcements column ─────────────────────────────────────── -->
+    <td width="43%" valign="top">
+
+      <!-- News & notices -->
+      <table width="100%" border="2" cellpadding="0" cellspacing="0"
+             bordercolor="#336699">
+        <tr bgcolor="#336699">
+          <td>
+            <table width="100%" border="0" cellpadding="6" cellspacing="0">
+              <tr>
+                <td>
+                  <font face="Arial" color="#ffffff" size="2">
+                    <b>&#9660;&nbsp; NEWS &amp; ANNOUNCEMENTS</b>
+                  </font>
+                </td>
+                <td align="right">
+                  <font face="Arial" color="#aaccff" size="1">
+                    <a href="{{ link('/news') }}"
+                       style="color:#aaccff;">All&nbsp;News&nbsp;&#187;</a>
+                  </font>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Announcement 1 -->
+        <tr bgcolor="#fffff4">
+          <td>
+            <table width="100%" border="0" cellpadding="8" cellspacing="0">
+              <tr>
+                <td width="50" bgcolor="#cc6600" align="center" valign="top">
+                  <font face="Arial" color="#ffffff" size="1"><b>
+                    JUN<br><font size="3">10</font><br>2026
+                  </b></font>
+                </td>
+                <td>
+                  <font face="Arial" size="2">
+                    <b><a href="{{ link('/meetings/calendar') }}">
+                      Planning Commission Meeting</a></b>
+                    <font color="#cc0000">
+                      &nbsp;<b><blink>&#9733;NEW&#9733;</blink></b>
+                    </font>
+                    <br>
+                    <font size="1" color="#555555">
+                      6:00 PM &mdash; County Administration Building, Room 204.
+                      Agenda documents available on the
+                      <a href="{{ link('/meetings/calendar') }}">meeting
+                      calendar</a>.
+                    </font>
+                  </font>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr bgcolor="#cccccc"><td height="1"></td></tr>
+
+        <!-- Announcement 2 -->
+        <tr bgcolor="#f4fff4">
+          <td>
+            <table width="100%" border="0" cellpadding="8" cellspacing="0">
+              <tr>
+                <td width="50" bgcolor="#336633" align="center" valign="top">
+                  <font face="Arial" color="#ffffff" size="1"><b>
+                    SEP<br><font size="3">30</font><br>2026
+                  </b></font>
+                </td>
+                <td>
+                  <font face="Arial" size="2">
+                    <b><a href="{{ link('/programs/grants/deadlines') }}">
+                      Heritage Preservation Grant Open</a></b>
+                    <font color="#cc0000">
+                      &nbsp;<b>&#9733;NEW&#9733;</b>
+                    </font>
+                    <br>
+                    <font size="1" color="#555555">
+                      Applications now being accepted. See the
+                      <a href="{{ link('/programs/grants/deadlines') }}">
+                      grant deadlines page</a> for requirements.
+                    </font>
+                  </font>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr bgcolor="#cccccc"><td height="1"></td></tr>
+
+        <!-- Announcement 3 -->
+        <tr bgcolor="#fffff4">
+          <td>
+            <table width="100%" border="0" cellpadding="8" cellspacing="0">
+              <tr>
+                <td width="50" bgcolor="#003399" align="center" valign="top">
+                  <font face="Arial" color="#ffffff" size="1"><b>
+                    MAY<br><font size="3">01</font><br>2026
+                  </b></font>
+                </td>
+                <td>
+                  <font face="Arial" size="2">
+                    <b><a href="{{ link('/finance/budget-summary') }}">
+                      FY2026 Budget Adopted</a></b><br>
+                    <font size="1" color="#555555">
+                      Board of Supervisors adopted the FY2026 General Fund
+                      budget. Full summary in
+                      <a href="{{ link('/finance/budget-summary') }}">Finance</a>.
+                    </font>
+                  </font>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr bgcolor="#cccccc"><td height="1"></td></tr>
+
+        <!-- Announcement 4 -->
+        <tr bgcolor="#f4f4ff">
+          <td>
+            <table width="100%" border="0" cellpadding="8" cellspacing="0">
+              <tr>
+                <td width="50" bgcolor="#663399" align="center" valign="top">
+                  <font face="Arial" color="#ffffff" size="1"><b>
+                    MAR<br><font size="3">20</font><br>2026
+                  </b></font>
+                </td>
+                <td>
+                  <font face="Arial" size="2">
+                    <b><a href="{{ link('/committees/planning/agendas') }}">
+                      Planning Committee Agendas Posted</a></b><br>
+                    <font size="1" color="#555555">
+                      Agendas for recent Planning Commission meetings are
+                      available for public review.
+                    </font>
+                  </font>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr bgcolor="#cccccc"><td height="1"></td></tr>
+
+        <!-- Announcement 5 -->
+        <tr bgcolor="#fff8f0">
+          <td>
+            <table width="100%" border="0" cellpadding="8" cellspacing="0">
+              <tr>
+                <td width="50" bgcolor="#996600" align="center" valign="top">
+                  <font face="Arial" color="#ffffff" size="1"><b>
+                    MAR<br><font size="3">15</font><br>2026
+                  </b></font>
+                </td>
+                <td>
+                  <font face="Arial" size="2">
+                    <b><a href="{{ link('/departments/services/directory') }}">
+                      Services Directory Updated</a></b>
+                    <font color="#cc0000">
+                      &nbsp;<b>&#9733;NEW&#9733;</b>
+                    </font>
+                    <br>
+                    <font size="1" color="#555555">
+                      The County Services Directory has been updated for
+                      March 2026. Download the new PDF from the
+                      <a href="{{ link('/departments/services') }}">
+                      Services page</a>.
+                    </font>
+                  </font>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+      </table><!-- /announcements -->
+
+      <br>
+
+      <!-- Contact box -->
+      <table width="100%" border="2" cellpadding="0" cellspacing="0"
+             bordercolor="#666666">
+        <tr bgcolor="#444466">
+          <td>
+            <table width="100%" border="0" cellpadding="6" cellspacing="0">
+              <tr><td>
+                <font face="Arial" color="#ccccee" size="2">
+                  <b>&#128222;&nbsp; CONTACT TEMPLETON COUNTY</b>
+                </font>
+              </td></tr>
+            </table>
+          </td>
+        </tr>
+        <tr bgcolor="#f8f8f0">
+          <td>
+            <table border="0" cellpadding="8" cellspacing="0" width="100%">
+              <tr>
+                <td>
+                  <font face="Arial" size="2">
+                    <b>County Administration Building</b><br>
+                    1234 County Center Drive<br>
+                    Templeton, CA 93465<br>
+                    <br>
+                    <font face="Courier New" size="2">
+                      Main:&nbsp;&nbsp;(555)&nbsp;800&#8209;1000<br>
+                      Fax:&nbsp;&nbsp;&nbsp;(555)&nbsp;800&#8209;1001
+                    </font>
+                    <br><br>
+                    <font color="#555555" size="1">
+                      <b>Hours:</b> Mon&ndash;Fri, 8:00&nbsp;AM&ndash;5:00&nbsp;PM
+                    </font>
+                    <br>
+                    <a href="{{ link('/directory/officials') }}">
+                      &#9658; View Elected Officials</a><br>
+                    <a href="{{ link('/departments/clerk/contact') }}">
+                      &#9658; County Clerk Contact</a>
+                  </font>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <br>
+
+      <!-- Plug-in notice (very 1997) -->
+      <table width="100%" border="1" cellpadding="6" cellspacing="0"
+             bordercolor="#cccccc" bgcolor="#fffff0">
+        <tr>
+          <td align="center">
+            <font face="Arial" size="1" color="#888888">
+              <i>Some pages on this site require
+              <a href="{{ link('/help/plugins') }}">Adobe Acrobat Reader</a>
+              to view PDF documents.<br>
+              <a href="{{ link('/help/plugins') }}">Download free plug-ins here.</a>
+              </i>
+            </font>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+<hr size="2" color="#cccccc" noshade>
+<font face="Arial" size="1" color="#aaaaaa">
+  <i>Templeton County Web Team &mdash;
+  <a href="{{ link('/contact') }}">webmaster@templetoncounty.gov</a>
+  &mdash; Last reviewed: March 2003</i>
+</font>
+
+{% endblock %}

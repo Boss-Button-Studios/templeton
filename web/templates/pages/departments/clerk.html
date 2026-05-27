@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}County Clerk's Office — Templeton County{% endblock %}
+
+{% block content %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#003366" width="5">&nbsp;</td>
+    <td bgcolor="#003366">
+      <font face="Times New Roman, Times, serif" color="#ffcc00" size="5">
+        &nbsp;<b>County Clerk's Office</b>
+      </font>
+    </td>
+    <td bgcolor="#003366" align="right">
+      <font face="Arial" color="#99aacc" size="1">
+        &nbsp;Home&nbsp;&gt;&nbsp;Departments&nbsp;&gt;&nbsp;Clerk&nbsp;&nbsp;
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<table width="100%" border="1" cellpadding="10" cellspacing="0" bordercolor="#336699" bgcolor="#f0f4ff">
+  <tr bgcolor="#336699">
+    <td colspan="2">
+      <font face="Arial" color="#ffffff" size="2">
+        <b>&#9658;&nbsp; OFFICE INFORMATION</b>
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <font face="Arial" size="2">
+        <b>County Clerk's Office</b><br>
+        1234 County Center Drive, Suite 101<br>
+        Templeton, CA 93465<br>
+        <br>
+        The County Clerk serves as the official keeper of public records for
+        Templeton County. Our office handles voter registration, recorded documents,
+        business licenses, marriage certificates, and public records requests.
+      </font>
+    </td>
+    <td width="50%" valign="top">
+      <font face="Arial" size="2">
+        <b>Office Services</b><br><br>
+        <table border="0" cellpadding="3" cellspacing="0" width="100%">
+          <tr>
+            <td><font face="Arial" size="2">
+              &#9658; <a href="{{ link('/departments/clerk/contact') }}">Contact the Clerk's Office</a><br>
+              &#9658; <a href="{{ link('/records') }}">Public Records Request</a><br>
+              &#9658; <a href="{{ link('/departments/clerk/licenses') }}">Business Licenses</a><br>
+              &#9658; <a href="{{ link('/departments/clerk/marriage') }}">Marriage Certificates</a><br>
+              &#9658; <a href="{{ link('/departments/clerk/voter') }}">Voter Registration</a>
+            </font></td>
+          </tr>
+        </table>
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table width="100%" border="1" cellpadding="8" cellspacing="0" bordercolor="#cccccc">
+  <tr bgcolor="#996600">
+    <td>
+      <font face="Arial" color="#ffffff" size="2"><b>&#9658; HOURS OF OPERATION</b></font>
+    </td>
+  </tr>
+  <tr bgcolor="#fffff8">
+    <td>
+      <font face="Arial" size="2">
+        <b>Monday &ndash; Friday:</b> 8:00 AM &ndash; 5:00 PM<br>
+        <b>Saturday &ndash; Sunday:</b> Closed<br>
+        <b>Holidays:</b> Closed (see <a href="{{ link('/meetings/calendar') }}">calendar</a> for scheduled closures)<br>
+        <br>
+        <font color="#cc0000" size="1">
+          <b>NOTE:</b> Vital records (birth, death, marriage) require an in-person appointment.
+          Please call ahead to schedule.
+        </font>
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+<hr size="1" color="#999999" noshade>
+<font face="Arial" size="1" color="#888888">
+  <i>County Clerk's Office &mdash; webmaster@templetoncounty.gov &mdash; Last updated: January 2003</i>
+</font>
+{% endblock %}

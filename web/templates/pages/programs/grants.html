@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}Grants &amp; Programs — Templeton County{% endblock %}
+
+{% block content %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#003366" width="5">&nbsp;</td>
+    <td bgcolor="#003366">
+      <font face="Times New Roman, Times, serif" color="#ffcc00" size="5">
+        &nbsp;<b>Grants &amp; Programs</b>
+      </font>
+    </td>
+    <td bgcolor="#003366" align="right">
+      <font face="Arial" color="#99aacc" size="1">
+        &nbsp;Home&nbsp;&gt;&nbsp;Grants&nbsp;&nbsp;
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<table width="100%" border="1" cellpadding="10" cellspacing="0" bordercolor="#336699">
+  <tr bgcolor="#336699">
+    <td colspan="2">
+      <font face="Arial" color="#ffffff" size="2"><b>&#9658; COUNTY GRANT PROGRAMS</b></font>
+    </td>
+  </tr>
+  <tr>
+    <td width="55%" valign="top">
+      <font face="Arial" size="2">
+        Templeton County administers several grant programs to support local
+        organizations, preservation efforts, and community projects.
+        Applications are accepted on a rolling basis for most programs.<br><br>
+        For current deadlines and eligibility requirements, see the
+        <a href="{{ link('/programs/grants/deadlines') }}">Grant Deadlines</a> page.
+      </font>
+    </td>
+    <td width="45%" valign="top">
+      <font face="Arial" size="2">
+        <b>&#9658; Available Programs</b><br><br>
+        <a href="{{ link('/programs/grants/deadlines') }}">Application Deadlines</a>
+        <font color="#cc0000"><b>&nbsp;&#9733;NEW&#9733;</b></font><br>
+        <font size="1" color="#666666">Current deadlines for all active programs</font><br>
+        <br>
+        <a href="{{ link('/programs/grants/eligibility') }}">Eligibility Requirements</a><br>
+        <font size="1" color="#666666">Who may apply and qualifying criteria</font><br>
+        <br>
+        <a href="{{ link('/programs/grants/apply') }}">How to Apply</a><br>
+        <font size="1" color="#666666">Application process and required documents</font>
+      </font>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table width="100%" border="1" cellpadding="8" cellspacing="0" bordercolor="#cccccc">
+  <tr bgcolor="#336633">
+    <td colspan="3">
+      <font face="Arial" color="#ffffff" size="2"><b>&#9658; CURRENT GRANT PROGRAMS</b></font>
+    </td>
+  </tr>
+  <tr bgcolor="#ccddcc">
+    <td width="40%"><font face="Arial" size="2"><b>Program</b></font></td>
+    <td width="30%"><font face="Arial" size="2"><b>Purpose</b></font></td>
+    <td width="30%"><font face="Arial" size="2"><b>Status</b></font></td>
+  </tr>
+  <tr bgcolor="#f4fff4">
+    <td><font face="Arial" size="2">Heritage Preservation Grant</font></td>
+    <td><font face="Arial" size="2">Historic building restoration</font></td>
+    <td><font face="Arial" size="2" color="#006600"><b>OPEN</b></font></td>
+  </tr>
+  <tr bgcolor="#fffff4">
+    <td><font face="Arial" size="2">Community Development Block Grant</font></td>
+    <td><font face="Arial" size="2">Housing &amp; infrastructure</font></td>
+    <td><font face="Arial" size="2" color="#006600"><b>OPEN</b></font></td>
+  </tr>
+  <tr bgcolor="#f4fff4">
+    <td><font face="Arial" size="2">Small Business Assistance Program</font></td>
+    <td><font face="Arial" size="2">Local business support</font></td>
+    <td><font face="Arial" size="2" color="#888888">Closed &mdash; FY2025</font></td>
+  </tr>
+  <tr bgcolor="#fffff4">
+    <td><font face="Arial" size="2">Agricultural Preservation Grant</font></td>
+    <td><font face="Arial" size="2">Farmland conservation</font></td>
+    <td><font face="Arial" size="2" color="#006600"><b>OPEN</b></font></td>
+  </tr>
+</table>
+
+<br>
+<hr size="1" color="#999999" noshade>
+<font face="Arial" size="1" color="#888888">
+  <i>Grants Office &mdash; grants@templetoncounty.gov &mdash; Last updated: March 2003</i>
+</font>
+{% endblock %}

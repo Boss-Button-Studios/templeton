@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block title %}Elected Officials — Templeton County{% endblock %}
+
+{% block content %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#003366" width="5">&nbsp;</td>
+    <td bgcolor="#003366">
+      <font face="Times New Roman, Times, serif" color="#ffcc00" size="5">
+        &nbsp;<b>County Elected Officials</b>
+      </font>
+    </td>
+    <td bgcolor="#003366" align="right">
+      <font face="Arial" color="#99aacc" size="1">
+        &nbsp;Home&nbsp;&gt;&nbsp;Directory&nbsp;&gt;&nbsp;Officials&nbsp;&nbsp;
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<!-- T-04 DECOY LINKS — goal-adjacent but wrong destinations -->
+{% if t04_decoys %}
+<table width="100%" border="1" cellpadding="6" cellspacing="0" bordercolor="#aaaacc" bgcolor="#f4f4ff">
+  <tr bgcolor="#444466">
+    <td>
+      <font face="Arial" color="#ccccee" size="2"><b>&#9658; ASSESSOR'S OFFICE</b></font>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <font face="Arial" size="2">
+        {% for decoy in t04_decoys %}
+          &#9658; <a href="{{ link(decoy.href) }}">{{ decoy.anchor }}</a><br>
+        {% endfor %}
+        {% if t05_href %}
+          &#9658; <a href="{{ link(t05_href) }}">{{ t05_text }}</a><br>
+        {% endif %}
+      </font>
+    </td>
+  </tr>
+</table>
+<br>
+{% endif %}
+
+<table width="100%" border="2" cellpadding="8" cellspacing="0" bordercolor="#336699">
+  <tr bgcolor="#003366">
+    <td colspan="4">
+      <font face="Arial" color="#ffffff" size="2">
+        <b>&#9658;&nbsp; TEMPLETON COUNTY ELECTED OFFICIALS</b>
+      </font>
+    </td>
+  </tr>
+  <tr bgcolor="#ccddee">
+    <td width="25%"><font face="Arial" size="2"><b>Office</b></font></td>
+    <td width="30%"><font face="Arial" size="2"><b>Official</b></font></td>
+    <td width="25%"><font face="Arial" size="2"><b>Direct Phone</b></font></td>
+    <td width="20%"><font face="Arial" size="2"><b>Term Expires</b></font></td>
+  </tr>
+
+  <tr bgcolor="#ffffff">
+    <td><font face="Arial" size="2">Board of Supervisors, District 1</font></td>
+    <td><font face="Arial" size="2">Patricia A. Nguyen</font></td>
+    <td><font face="Arial" size="2" face="Courier New">(555) 800-1101</font></td>
+    <td><font face="Arial" size="2">2026</font></td>
+  </tr>
+  <tr bgcolor="#eef4ff">
+    <td><font face="Arial" size="2">Board of Supervisors, District 2</font></td>
+    <td><font face="Arial" size="2">Harold T. Becker</font></td>
+    <td><font face="Arial" size="2" face="Courier New">(555) 800-1102</font></td>
+    <td><font face="Arial" size="2">2026</font></td>
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td><font face="Arial" size="2">Board of Supervisors, District 3</font></td>
+    <td><font face="Arial" size="2">Maria C. Espinoza</font></td>
+    <td><font face="Arial" size="2" face="Courier New">(555) 800-1103</font></td>
+    <td><font face="Arial" size="2">2024</font></td>
+  </tr>
+  <tr bgcolor="#eef4ff">
+    <td><font face="Arial" size="2">Board of Supervisors, District 4</font></td>
+    <td><font face="Arial" size="2">James W. Thornton</font></td>
+    <td><font face="Arial" size="2" face="Courier New">(555) 800-1104</font></td>
+    <td><font face="Arial" size="2">2026</font></td>
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td><font face="Arial" size="2">Board of Supervisors, District 5</font></td>
+    <td><font face="Arial" size="2">Deborah L. Yamamoto</font></td>
+    <td><font face="Arial" size="2" face="Courier New">(555) 800-1105</font></td>
+    <td><font face="Arial" size="2">2024</font></td>
+  </tr>
+  <tr bgcolor="#eef4ff">
+    <td><font face="Arial" size="2">County Clerk</font></td>
+    <td><font face="Arial" size="2">Margaret L. Henshaw</font></td>
+    <td><font face="Arial" size="2" face="Courier New">(555) 843-1201</font></td>
+    <td><font face="Arial" size="2">Appointed</font></td>
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td><font face="Arial" size="2"><b>County Assessor</b></font></td>
+    <td><font face="Arial" size="2"><b>Thomas R. Delgado</b></font></td>
+    <td><font face="Arial" size="2" face="Courier New"><b>(555) 917-4422</b></font></td>
+    <td><font face="Arial" size="2">2026</font></td>
+  </tr>
+  <tr bgcolor="#eef4ff">
+    <td><font face="Arial" size="2">County Treasurer-Tax Collector</font></td>
+    <td><font face="Arial" size="2">Linda S. Park</font></td>
+    <td><font face="Arial" size="2" face="Courier New">(555) 800-5500</font></td>
+    <td><font face="Arial" size="2">2026</font></td>
+  </tr>
+  <tr bgcolor="#ffffff">
+    <td><font face="Arial" size="2">District Attorney</font></td>
+    <td><font face="Arial" size="2">Robert F. Callahan</font></td>
+    <td><font face="Arial" size="2" face="Courier New">(555) 800-6600</font></td>
+    <td><font face="Arial" size="2">2026</font></td>
+  </tr>
+  <tr bgcolor="#eef4ff">
+    <td><font face="Arial" size="2">Sheriff-Coroner</font></td>
+    <td><font face="Arial" size="2">Sandra M. Okafor</font></td>
+    <td><font face="Arial" size="2" face="Courier New">(555) 800-7700</font></td>
+    <td><font face="Arial" size="2">2024</font></td>
+  </tr>
+
+</table>
+
+<br>
+<font face="Arial" size="1" color="#888888">
+  <i>Information current as of January 2003. For updates call (555) 800-1000.</i>
+</font>
+
+<br><br>
+<hr size="1" color="#999999" noshade>
+<font face="Arial" size="1" color="#888888">
+  <i>County Directory &mdash; webmaster@templetoncounty.gov &mdash; Last updated: January 2003</i>
+</font>
+{% endblock %}
