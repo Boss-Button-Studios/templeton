@@ -18,9 +18,11 @@ services:
     environment:
       TEMPLETON_SECRET: ${TEMPLETON_SECRET}
       TEMPLETON_RUN_ID: ${TEMPLETON_RUN_ID}
+      TEMPLETON_TIER_CONFIG: /web-config/tier1.yaml
     volumes:
       - ./shared:/shared:ro
       - ./proxy:/app:ro
+      - ./web/config:/web-config:ro
       - proxy_data:/data
     ports:
       - "8080:8080"   # HTTP/HTTPS proxy for agent
