@@ -10,7 +10,8 @@ services:
       - ./shared:/shared:ro
       - ./web:/app:ro
     networks:
-      - internal_net
+      internal_net:
+        ipv4_address: 172.28.0.20
     restart: unless-stopped
 
   proxy:
@@ -28,7 +29,14 @@ services:
       - "8080:8080"   # HTTP/HTTPS proxy for agent
       - "8081:8081"   # Monitor endpoint (live report stream)
     networks:
-      - internal_net
+      internal_net:
+        ipv4_address: 172.28.0.10
+    extra_hosts:
+      # Proxy must forward county traffic to the web container (172.28.0.20),
+      # not to itself — the DNS container points agents at 172.28.0.10 (proxy),
+      # but the proxy needs templetoncounty.gov to resolve to the web container.
+      - "templetoncounty.gov:172.28.0.20"
+      - "www.templetoncounty.gov:172.28.0.20"
     depends_on:
       - web
     restart: unless-stopped
@@ -36,7 +44,8 @@ services:
   dns:
     build: ./dns
     networks:
-      - internal_net
+      internal_net:
+        ipv4_address: 172.28.0.53
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
@@ -44,6 +53,9 @@ services:
 networks:
   internal_net:
     driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/24
 
 volumes:
   proxy_data:
