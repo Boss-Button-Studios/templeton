@@ -54,10 +54,10 @@ templeton/
 | Phase 1 — Web Server Core | ✅ Complete (28 tests) |
 | Phase 2 — Flag Pages | ✅ Complete (all 7 flags) |
 | Phase 3 — Trap Modules (Tier 1) | ✅ Complete (T-01–T-06, 63 tests total) |
-| Phase 4 — Harness Proxy | ⬜ Next |
-| Phase 5 — DNS Container | ⬜ Pending |
-| Phase 6 — CLI | ⬜ Pending |
-| Phase 7 — Result Validation & Scoring | ⬜ Pending |
+| Phase 4 — Harness Proxy | ✅ Complete (31 tests) |
+| Phase 5 — DNS Container | ✅ Complete |
+| Phase 6 — CLI | ✅ Complete |
+| Phase 7 — Result Validation & Scoring | ✅ Complete (in cli/) |
 
 ---
 
